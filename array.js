@@ -62,3 +62,4 @@ rootArr.splice(3, 1);
 console.log(rootArr);
 
 // slice, reverse, pop(), push(), shift(), unshift() etc
+

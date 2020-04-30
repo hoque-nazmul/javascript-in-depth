@@ -20,3 +20,5 @@ let b = '12';
 let num = parseFloat(b);
 // console.log(typeof num);
 
+
+

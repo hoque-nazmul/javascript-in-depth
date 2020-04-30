@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .box {
+            width: 50vw;
+            height: auto;
+            background-color: chocolate;
+            color: cornsilk;
+            margin: 30px auto;
+            text-align: center;
+            padding: 30px 0px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="container">
+        <h2 id="heading">Introduction : DOM Manipulation</h2>
+        <ul id="list-group">
+            <li class="list-item">Lorem ipsum dolor sit.</li>
+            <li class="list-item">Ea eum ut consequatur.</li>
+            <li class="list-item">Nobis quam earum et?</li>
+        </ul>
+        <button id="btn">Click Me</button>
+        <br><br>
+        <input type="text" id="name">
+        <p id="showName"></p>
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" class="checkbox" value="JavaScript">
+        <label for="vehicle1">JavaScript</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" class="checkbox" value="Java">
+        <label for="vehicle2">Java</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" class="checkbox" value="PHP">
+        <label for="vehicle3">PHP</label><br><br>
+
+        <p id="skills"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
