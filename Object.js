@@ -50,18 +50,18 @@ const userInput = 'age';
 // ***** CRUD | Object Property ***** //
 // It would't be difficult to play with object property for creating, Reading, Updating and Deleting.
 
-// For creating property, We must use that property name which wasn't included the object before. For Example:
+// For creating property, We must use that property name which wasn't included before in the object. For Example:
 person.email = "mukta@gmail.com";
 // console.log(person);
 
 // Simply we can read the object property by using 'object.object.property'
 // console.log(person.name);
 
-// For updating property, we have to select an property which used before in the object. 
+// For updating property, we have to select an property which used before in our existing object. 
 person.age = 22;
 // console.log(person);
 
-// To delete the object property, we have to use 'delete operator'. It's an intereting operator which using we delete any object property.
+// To delete the object property, we have to use 'delete operator'. It's an cool operator which using we delete any object property.
 delete person.profession;
 // console.log(person);
 

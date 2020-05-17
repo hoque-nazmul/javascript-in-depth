@@ -31,11 +31,15 @@ const strTwo = 'bcd';
 
 // ***** String Concatenation ***** //
 // concat() function is used for adding multiple string.
-const firstName = "Nazmul";
-const lastName = "Hoque";
-const test = "Jabed";
-const concatStr = firstName.concat(' ', lastName,' ', test);
-// console.log(concatStr);
+const firstName = "Jhon";
+const lastName = "Doe";
+const title = "2nd";
+// Concatenation between two String.
+const twoStr = firstName.concat(' ', lastName);
+// Concatenation among three String.
+const threeStr = firstName.concat(' ', lastName,' ', title);
+// console.log(twoStr);
+// console.log(threeStr);
 // Also used for concatenation - +, ,(comma)
 
 // ***** Sub String ***** //
@@ -51,9 +55,10 @@ const findChar = boy.charAt(0); //stored 'A'
 // console.log(findChar);
 
 // ***** startsWith() and endsWith() ***** //
-// statsWith() is used for matching first Char of str. And endsWith() is used for matching the last Char of str.
-const sayHi = "Hi, Nazmul";
-// sayHi.startsWith('H') ? console.log("True") : console.log("False"); //Output: True
+// statsWith() is used for matching string character or characters of a certain string. And endsWith() is used for matching ending character or characters of a certain string.
+
+const sayHi = "Hey, Nazmul";
+
 if(sayHi.endsWith('l')){
     // console.log('True');
 } else {
@@ -75,10 +80,10 @@ const afterTrim = beforeTrim.trim();
 // trimStart() & trimEnd() are also used for removing starting and ending white Space.
 
 // ***** split() ***** //
-// split function used to sparate string to array element by ' ' or comma and so on.
-const coupleName = "Nazmul Mukta";
-const splitCoupleName = coupleName.split(' ');
-// console.log(splitCoupleName);
+// split() used to sparate or divide string by on the basis of different type of separators like ' ' or comma and what you want. It important to keep in mind that it returns an array as output.
+// const personName = "Jhon Doe";
+// const splitPersonName = personName.split(' ');
+// console.log(splitPersonName); // expected output: [ 'Jhon', 'Doe' ]
 
 // ***** String Length ***** //
 const strForLength = "Code is Beauty";
@@ -95,21 +100,26 @@ while(true) {
 
 
 // ***** idnexOf() && lastIndexOf() ***** //
-// IndexOf() return the total char's length until serching word. lastIndexOf() also return the char's length until the last serching word.
+// IndexOf() returns the length of characters until serching character or characters. lastIndexOf() also returns the length of total characters until the last serching character or characters.
 const paragraph = 'I am a dog lover. I love dog';
 const serchTxt = 'dog';
 // console.log(paragraph.lastIndexOf(serchTxt)); //Output: 25
 // console.log(paragraph.indexOf(serchTxt)); //Output: 7
 
 // ***** includes() ***** //
-// include function is used for checking word in sentence and it returns boolean.
-const sentence = "I am Nazmul Hoque";
-const word = "Nazmul";
-if (sentence.includes(word)) {
-    // console.log("Nazmul is Here!");
-} else {
-    // console.log("Nazmul is not here!");
-}
+// includes() is used for checking a selected string elements or characters from a string, it would be a word also. And If it gets the targated thing, it returns true otherwise returns false. 
+const string = "JavaScript is cool";
+const lang = "JavaScript";
+// string.includes(lang) ? console.log(true) : console.log(false);
+
+// string.includes('J') ? console.log(true) : console.log(false);
+// expected output: true
+
+// string.includes('Java') ? console.log(true) : console.log(false);
+// expected output: true
+
+// string.includes('java') ? console.log(true) : console.log(false);
+// expected output: false
 
 // ***** replace() ***** //
 // we can replace a word or words of a sentence using replace function.
