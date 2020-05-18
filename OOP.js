@@ -85,3 +85,15 @@ console.log(ads);
 */
 console.log(ads.getAddress());
 // expected output: Chittagong, Bangladesh
+
+// function is special type of object in javascript. We can prove that by doing several things. such as... 
+// 1. every object must have a constructor. If we want to access that, of course we do that. 
+const testing = function() {
+    console.log("something");
+}
+console.log(testing.constructor);
+// output: ƒ Function() { [native code] }
+
+// 2. we use a function like an object in the time of implementing call(), apply(), bind();
+
+
