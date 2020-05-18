@@ -91,9 +91,21 @@ console.log(ads.getAddress());
 const testing = function() {
     console.log("something");
 }
-console.log(testing.constructor);
+// console.log(testing.constructor);
 // output: ƒ Function() { [native code] }
 
 // 2. we use a function like an object in the time of implementing call(), apply(), bind();
 
+/***  call(), apply(), bind()  ***/  
+// if we want to use one function as an object method as much as possible, we can easily do that by using call(), apply(), bind(); It helps us to run function or method at different different execution context of the object.
+// if we want to execute our function in a specific context of an object, we can associate that using call(), apply(), bind();
 
+function add(c, d) {
+    console.log(this.a + this.b + c + d);
+}
+console.log();
+// console.log(add());
+add.call({a:2, b:3}, 3, 4)
+add.apply({a:21, b:9}, [5,5]);
+const binds = add.bind({a:32, b:18});
+binds(32, 43);
